@@ -2,7 +2,7 @@
 
 ### Goal
 
-**The goal of this tutorial is to become familiar with how to build modern websites and web applications and the REST APIs that they interact with. We’ll be building a very simple website that will allow a user to register an account, log in and log out securely.** The stack we’ll be using is the popular MERN stack, which comprises MongoDB, Express.js, React.js, and Node.js. We’ll be using several other technologies along the way, but those four are the biggies.
+**The goal of this tutorial is to become familiar with how to build web applications that depend on APIs to provide them with services like user authentication and authorization. We’ll be building a very simple website that will allow a user to register an account, log in and log out securely.** The stack we’ll be using is the popular MERN stack, which comprises MongoDB, Express.js, React.js, and Node.js. We’ll be using several other technologies along the way, but those four are the biggies.
 
 ### Background
 
