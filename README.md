@@ -137,8 +137,8 @@ Next, open package.json and at the object's top level, the same level as things 
 ```
 
 It's important that you don't accidentally insert that line within an object, e.g. don't accidentally insert it in "dependencies" or "scripts".
- 
-You’re almost ready to start the Express server, but first you need to install Nodemon. Nodemon is a package that will update your Express server when you make changes to any files. Using Nodemon you won’t have to manually stop and restart the server every time you make a change.
+
+You’re almost ready to start the Express server, but first you need to install Nodemon. Nodemon is a package that will update your Express server when you make changes to any files. Using Nodemon, you won’t have to manually stop and restart the server every time you make a change.
 
 ```
  npm i nodemon
@@ -232,13 +232,13 @@ This is long overdue, but Last Week I Learned (LWIL): (See my new thread for a f
 
 In step 2, we created a paired down server.js file with everything we needed to start the server and display a homepage.
 
-Next, we need to install the Mongoose package. Run -
+Next, we need to install the Mongoose package. Run:
 
 ```
  npm i mongoose
 ```
 
-Now we need to go back to that file and write the code that will allow Express and Mongoose to talk to Mongo. Here’s the complete script. We’ve marked the new lines.
+Now we need to go back to server.js and write the code that will allow Express and Mongoose to talk to Mongo. Here’s the complete server.js script. We’ve marked the new lines.
 
 ```js
 // server.js
@@ -258,10 +258,10 @@ app.get('/', function (req, res) {
 
 // THIS IS NEW
 
-// "react-auth" is the name we're giving our db. It will be created when we connect to it, if it doesn't already exist.
-const mongo_uri = 'mongodb://localhost/react-auth';
+// "first-mern" is the name we're giving our db. It will be created when we connect to it, if it doesn't already exist.
+const mongo_uri = 'mongodb://localhost/first-mern';
 
-// Mongoose's connect() method takes our db's URI, some connection options, and a callback. Don't worry about the connection options. The callback will catch any connection errors or log a success message.
+// Mongoose's connect() method takes three arguments: our db's URI, some connection options, and a callback. Don't worry about the connection options. The callback will catch any connection errors or log a success message.
 mongoose.connect(mongo_uri, {useNewUrlParser: true, useUnifiedTopology: true}, function (err) {
    if (err) {
        throw err;
@@ -276,11 +276,13 @@ mongoose.connect(mongo_uri, {useNewUrlParser: true, useUnifiedTopology: true}, f
 app.listen(process.env.PORT || 8080);
 ```
 
-Now stop the Express server and restart it. In the shell running your server, you should see a message that reads -
+Now stop the Express server and restart it. In the shell running your server, you should see a message that reads:
 
 ```
-Successfully connected to mongodb://localhost/react-auth
+Successfully connected to mongodb://localhost/first-mern
 ```
+
+Note that when you passed the URI ending in "first-mern" into connect(), Mongoose recognized that there was no database by that name and created it for you.
 
 ### Step 5 - Adding routes to React
 
