@@ -8,7 +8,7 @@
 
 This is a tutorial for beginners, so don’t worry if you don’t have very much familiarity with one or more of the technologies we just mentioned. We’ve created a list of resources that should help.
 
-The most import concepts to grasp are how clients and servers interact by exchanging HTTP messages; the role that React plays as a front-end library; the role that Node and Express play on the back-end to serve our site; and the difference between client-side routing and traditional server-side routing.
+The most import concepts to grasp are how clients and servers interact by exchanging HTTP messages; the role that React plays as a front-end library; the role that Node and Express play on the back-end to serve our API; and the difference between client-side routing and traditional server-side routing.
 
 The links below will take you to **short videos** about each subject. You certainly don’t need to watch all of them, or to watch them in their entirety, but if any of these topics look unfamiliar, the video will provide you with a quick introduction.
 
@@ -43,12 +43,13 @@ If you’d like to go deeper into any of the above topics, these articles are a 
 4. Using Express and MongoDB together is much easier with an ORM, so we’ll install Mongoose. After making some edits to our Express server script, we’ll ensure that our Express server can connect to MongoDB.
 5. At this point, we’ll jump back to the front-end and use React Router to set up some client-side routing. We’ll also create a couple of simple React components for our routes to render.
 6. Returning to the back-end we’ll create a couple of routes that our front-end will eventually use to fetch data.
+7. asdf
 
 ### Step One - Use Create React App to create a boilerplate React project
 
-You’ll need to make sure you have a relatively recent version of Node.js installed on your machine. The most recent version is 14.x.
+You’ll need to make sure you have a relatively recent version of Node.js installed on your machine. The most recent version as of this writing is 14.x.
 
-Node will automatically install NPM - the Node Package Manager. You can then use NPM to install all of the other libraries talked about below. There are many package managers. Another popular one is Yarn, and you’ll see Yarn mentioned in the tutorial. We’ll just stick to NPM.
+Node will automatically install NPM - the Node Package Manager. You can then use NPM to install all of the other libraries talked about below. There are many package managers. Another popular one is Yarn. We’re going to stick to NPM.
 
 With Node and NPM installed, navigate via the command line to the directory within which you want to put the project. Next run the following commands in sequence:
 
@@ -58,7 +59,7 @@ With Node and NPM installed, navigate via the command line to the directory with
  code .
 ```
 
-That will install all of the directories and files you’ll need. **The installation will take a while** and you’ll see lots of information printed to your screen. Don’t worry about the warnings. The last line tells your system to open the current directory in VS Code.
+That will install all of the directories and files you’ll need. **The installation will take a while** and you’ll see lots of information printed to your screen. Don’t worry about the warnings. The last line tells your system to open the current directory in VS Code. You can substitute another code editor if you like.
 
 From within your code editor, the file structure should look like this:
 
@@ -72,9 +73,9 @@ From within your code editor, the file structure should look like this:
  README.md
 ```
 
-The directories you’ll work with most are the top level and the src/ directory. Get familiar with the structure and files. And don’t worry if you’re not very familiar with React.
+The directories you’ll work with most are the top level and the src/ directory. Get familiar with the structure and files. And don’t worry if you’re if this is all new to you.
 
-Next, from the command line, run -
+Next, from the command line, run:
 
 ```
  npm start
@@ -82,9 +83,9 @@ Next, from the command line, run -
 
 This will start a development server that will serve your React installation. It will be served to port 3000 by default. Open your browser and open localhost:3000. The site should load with some boilerplate.
 
-NOTE: The NPM start script can be found in package.json. You can create other scripts in the same place. Other scripts will require a slightly different syntax to start. Use `npm run myscript`.
+NOTE: The NPM start script can be found in package.json. You can create other scripts in the same place. Other scripts will require a slightly different syntax to start. Use `npm run myScript`.
 
-These are the scripts that come with the Create React App install.
+These are the scripts that come with the Create React App installation.
 
 ```js
 "scripts": {
@@ -95,9 +96,11 @@ These are the scripts that come with the Create React App install.
  },
 ```
 
+If you'd like to learn more about those scripts, we suggest reading the README.md file.
+
 ### Step 2 - Set up the Express server
 
-Now run -
+Now run:
 
 ```
  npm i express
@@ -127,12 +130,14 @@ app.get("/", function (req, res) {
 app.listen(process.env.PORT || 8080);
 ```
 
-Next, open package.json and at the same level as things like “name” and “version” insert the line
+Next, open package.json and at the object's top level, the same level as things like “name” and “version” insert the line
 
 ```js
 "proxy": "http://localhost:8080"
 ```
 
+It's important that you don't accidentally insert that line within an object, e.g. don't accidentally insert it in "dependencies" or "scripts".
+ 
 You’re almost ready to start the Express server, but first you need to install Nodemon. Nodemon is a package that will update your Express server when you make changes to any files. Using Nodemon you won’t have to manually stop and restart the server every time you make a change.
 
 ```
