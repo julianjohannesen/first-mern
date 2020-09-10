@@ -162,46 +162,53 @@ Open your browser and navigate to localhost:8080. The page should load, and you 
 
 So far, we’ve created a boilerplate React project and confirmed that it can successfully serve our React front-end on port 3000. We’ve also installed the Express package and created a very simple server script to confirm that Express is serving our welcome message on port 8080.
 
-Here’s a quick overview of what we need to do next. We need to install a database that we’ll use to store our users’ account information, i.e. their email address and password. When a user submits the create-an-account form or the login form from their browser, the browser will send an HTTP POST request to our Express server. Express uses another piece of software called an ORM to talk to our database. If the user is creating a new account, our ORM will tell our database to save that new information to a new record. If the user is just logging in, our ORM will query the database to make sure that a matching email and password combination exist.
+Here’s a quick overview of what we need to do next. We need to install a database that we’ll use to store our users’ account information, i.e. their email address and password. When a user submits the create-an-account form or the login form from their browser, the browser will send an HTTP POST request to our Express server. Express uses another piece of software called an ORM to talk to our database. If the user is creating a new account, our ORM will tell our database to save that new information to a new record. If the user is just logging in, our ORM will query the database to make sure that a record with a matching email and password combination exists.
 
-The database we’re using MongoDB. The ORM that will talk to MongoDB is called Mongoose.
+The database we’re using is MongoDB. The ORM that will talk to MongoDB is called Mongoose.
 
 First, check to see if MongoDB is installed on your system. This is complicated by the fact that Windows, Mac, and different versions of Linux do things differently.
 
 NOTE: “mongod” is the name of the MongoDB server application. “mongo” is the name of the MongoDB shell application. The mongo shell can be used to tell mongod to do things from the command line.
 
-On Mac and Linux, if mongod is properly installed and the path is set, then you should be able to run -
+On Mac and Linux, if mongod is properly installed and the path is set correctly, then you should be able to run:
 
 ```
  mongod --version
 ```
 
+[ **Question for Ben** - if mongod was installed without using a package manager, or if the path is NOT set correctly, how else do you find out if mongod is installed?  ]
+
 This will tell you what version of mongod is running.
 
 On Windows you need to search for mongod.exe, which is usually in C:\Program Files\*\*MongoDB\*\*\.
 
-Next, if you have an older version of MongoDB, it might be a good idea to upgrade to 4.4.0. Use this command on Mac and Linux.
+Next, if you have an older version of MongoDB, it might be a good idea to upgrade to 4.4.0, the most recent stable release as of this writing. Use this command on Mac and Linux.
 
-Blah blah blah
+[  **Question for Ben** - what's the best way to upgrade to the most recent version that is agnostic as regards OS, at least for mac and linux, without getting too complicated? ]
 
-To check if mongo daemon running on wayland distro: `sudo systemctl status mongod`
-
-To run mongo daemon on wayland distro: `sudo systemctl start mongod`
+To check to see whether mongod is already running on Mac or Linux, run: 
 
 ```
-(Sources:
-
+ps -C mongod
 ```
 
--   \*\*<code>Start here:</code></strong>
-    -   <code>[https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units) </code>
-    -   <code>[https://fedoramagazine.org/how-to-get-mongodb-server-on-fedora/](https://fedoramagazine.org/how-to-get-mongodb-server-on-fedora/)</code>
--   <code>Extras:</code>
-    -   <code>[https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/](https://www.linode.com/docs/quick-answers/linux/start-service-at-boot/))</code>
+If mongod is running you should see a line that looks like this:
 
 ```
-Start mongo CLI:
+PID  TTY   TIME    CMD
+5253 pts/2 00:00:03 mongod
+```
 
+If it isn't, you can start mongod from the command line by running:
+
+```
+sudo mongod
+```
+
+LIkewise, you can start the mongo shell with:
+
+```
+mongo
 ```
 
 -   `starting CLI session`
