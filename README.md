@@ -1,8 +1,33 @@
 # Building Your First MERN App
 
+$ git commit -m "Refactor usability tests.
+>
+>
+Co-authored-by: name <name@example.com>
+Co-authored-by: another-name <another-name@example.com>"
+
+### Index
+
+* **[Goal]()**
+* **[Background]()**
+* **[Links]()**
+* **[Overview]()**
+* **Tutorial Steps**
+    * [Step 1 Use CRA to create project]() 
+    * [Step 2 Setup Express Server]()
+    * [Step 3 Install MongoDB]()
+    * [Step 4 Connecting Express to MongoDB]()
+    * [Step 5 Adding Routes in React]()
+    * [Step 6 Adding Routes in Express]()
+    * [Step 7 Requesting Data]()
+
 ### Goal
 
-**The goal of this tutorial is to become familiar with how to build web applications that depend on APIs to provide them with services like user authentication and authorization. We’ll be building a very simple website that will allow a user to register an account, log in and log out securely.** The stack we’ll be using is the popular MERN stack, which comprises MongoDB, Express.js, React.js, and Node.js. We’ll be using several other technologies along the way, but those four are the biggies.
+**Create a twitter-like web app using the MERN stack and explore basic authentication.**
+
+[jjedon]() and [bengineerdavis](https://twitter.com/bengineerdavis) 
+
+In this tutorial we'll become familiar with how to build web applications that depend on APIs to provide them with services like user authentication and authorization. We’ll be building a very simple website that will allow a user to register an account, log in and log out securely. The stack we’ll be using is the popular MERN stack, which comprises MongoDB, Express.js, React.js, and Node.js. We’ll be using several other technologies along the way, but those four are the biggies.
 
 ### Background
 
@@ -10,6 +35,7 @@ This is a tutorial for beginners, so don’t worry if you don’t have very much
 
 The most import concepts to grasp are how clients and servers interact by exchanging HTTP messages; the role that React plays as a front-end library; the role that Node and Express play on the back-end to serve our API; and the difference between client-side routing and traditional server-side routing.
 
+### Links
 The links below will take you to **short videos** about each subject. You certainly don’t need to watch all of them, or to watch them in their entirety, but if any of these topics look unfamiliar, the video will provide you with a quick introduction.
 
 1. [The client server model](https://www.youtube.com/watch?v=L5BlpPU_muY) (6 min)
