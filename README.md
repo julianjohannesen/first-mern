@@ -1,11 +1,5 @@
 # Building Your First MERN App
 
-$ git commit -m "Refactor usability tests.
->
->
-Co-authored-by: name <name@example.com>
-Co-authored-by: another-name <another-name@example.com>"
-
 ### Index
 
 * **[Goal]()**
@@ -25,7 +19,7 @@ Co-authored-by: another-name <another-name@example.com>"
 
 **Create a twitter-like web app using the MERN stack and explore basic authentication.**
 
-[jjedon]() and [bengineerdavis](https://twitter.com/bengineerdavis) 
+[jjeadon]() and [bengineerdavis](https://twitter.com/bengineerdavis) 
 
 In this tutorial we'll become familiar with how to build web applications that depend on APIs to provide them with services like user authentication and authorization. We’ll be building a very simple website that will allow a user to register an account, log in and log out securely. The stack we’ll be using is the popular MERN stack, which comprises MongoDB, Express.js, React.js, and Node.js. We’ll be using several other technologies along the way, but those four are the biggies.
 
