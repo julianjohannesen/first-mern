@@ -51,7 +51,7 @@ You’ll need to make sure you have a relatively recent version of Node.js insta
 
 Node will automatically install NPM - the Node Package Manager. You can then use NPM to install all of the other libraries talked about below. There are many package managers. Another popular one is Yarn. We’re going to stick to NPM.
 
-With Node and NPM installed, navigate via the command line to the directory within which you want to put the project. Next run the following commands in sequence:
+With Node and NPM installed, navigate via the command line to the directory within which you want to put the project. Next run the following commands in sequence, replacing "my-app" with the name of your application:
 
 ```
  npx create-react-app my-app
@@ -59,7 +59,7 @@ With Node and NPM installed, navigate via the command line to the directory with
  code .
 ```
 
-That will install all of the directories and files you’ll need. **The installation will take a while** and you’ll see lots of information printed to your screen. Don’t worry about the warnings. The last line tells your system to open the current directory in VS Code. You can substitute another code editor if you like.
+That will install almost all of the directories and files you’ll need. **The installation will take a while** and you’ll see lots of information printed to your screen. Don’t worry about any warnings. The last line tells your system to open the current directory in VS Code. You can substitute another code editor if you like.
 
 From within your code editor, the file structure should look like this:
 
@@ -73,7 +73,7 @@ From within your code editor, the file structure should look like this:
  README.md
 ```
 
-The directories you’ll work with most are the top level and the src/ directory. Get familiar with the structure and files. And don’t worry if you’re if this is all new to you.
+The directories you’ll work with most are the top level and the src/ directory. Get familiar with the structure and files. And don’t worry if this is all new to you.
 
 Next, from the command line, run:
 
@@ -282,7 +282,9 @@ Now stop the Express server and restart it. In the shell running your server, yo
 Successfully connected to mongodb://localhost/first-mern
 ```
 
-Note that when you passed the URI ending in "first-mern" into connect(), Mongoose recognized that there was no database by that name and created it for you.
+Note that when you passed the URI ending in "first-mern" into connect(), Mongoose recognized that there was no database by that name and created it for you. You can use the Mongo shell to inspect that database with:
+
+
 
 ### Step 5 - Adding routes to React
 
