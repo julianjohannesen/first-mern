@@ -130,7 +130,7 @@ app.get("/", function (req, res) {
 app.listen(process.env.PORT || 8080);
 ```
 
-Next, open package.json and at the object's top level, the same level as things like “name” and “version” insert the line
+Next, open package.json and at the object's top level, the same level as things like “name” and “version,” insert the line
 
 ```js
 "proxy": "http://localhost:8080"
@@ -157,6 +157,8 @@ You can now start the Express server with:
 ```
 
 Open your browser and navigate to localhost:8080. The page should load, and you should see the “Welcome to the homepage” message.
+
+NOTE: Installing Nodemon was necessary to avoid stopping and restarting our Express server every time we make a change, but you should note that this extra step was not necessary for our React server. "Live reload" and "hot module replacement" as they're called are built into Create React App applications.
 
 ### Step 3 - Install MongoDB
 
