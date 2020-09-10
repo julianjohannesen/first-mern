@@ -1,5 +1,7 @@
 # Building Your First MERN App
 
+testing commit template
+
 ### Index
 
 * **[Goal]()**
