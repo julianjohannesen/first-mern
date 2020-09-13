@@ -2,24 +2,23 @@
 
 ### Index
 
-* **[Goal]()**
-* **[Background]()**
-* **[Links]()**
-* **[Overview]()**
-* **Tutorial Steps**
-    * [Step 1 Use CRA to create project]() 
-    * [Step 2 Setup Express Server]()
-    * [Step 3 Install MongoDB]()
-    * [Step 4 Connecting Express to MongoDB]()
-    * [Step 5 Adding Routes in React]()
-    * [Step 6 Adding Routes in Express]()
-    * [Step 7 Requesting Data]()
+* **[Goal](#Goal)**
+* **[Background](#Background)**
+* **[Links](#Links)**
+* **[Overview](#Overview)**
+    * [Step 1 Use CRA to create project](/docs/1.md) 
+    * [Step 2 Setup Express Server](/docs/2.md)
+    * [Step 3 Install MongoDB](/docs/3.md)
+    * [Step 4 Connecting Express to MongoDB](/docs/4.md)
+    * [Step 5 Adding Routes in React](/docs/5.md)
+    * [Step 6 Adding Routes in Express](/docs/6.md)
+    * [Step 7 Requesting Data](/docs/7.md)
 
 ## Goal
 
 **Create a twitter-like web app using the MERN stack and explore basic authentication.**
 
-[jjeadon]() and [bengineerdavis](https://twitter.com/bengineerdavis) 
+[jjeadon](https://twitter.com/jjeadon) and [bengineerdavis](https://twitter.com/bengineerdavis) 
 
 In this tutorial we'll become familiar with how to build web applications that depend on APIs to provide them with services like user authentication and authorization. We’ll be building a very simple website that will allow a user to register an account, log in and log out securely. The stack we’ll be using is the popular MERN stack, which comprises MongoDB, Express.js, React.js, and Node.js. We’ll be using several other technologies along the way, but those four are the biggies.
 
