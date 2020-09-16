@@ -61,7 +61,7 @@ If you’d like to go deeper into any of the above topics, these articles are a 
 3. Then we’ll install MongoDB, and make sure that we’re able to start it, and interact with it via the Mongo shell.
 4. Using Express and MongoDB together is much easier with an ORM, so we’ll install Mongoose. After making some edits to our Express server script, we’ll ensure that our Express server can connect to MongoDB.
 5. At this point, we’ll jump back to the front-end and use React Router to set up some client-side routing. We’ll also create a couple of simple React components for our routes to render.
-6. Returning to the back-end we’ll create a couple of routes that our front-end will eventually use to fetch data.
+6. Returning to the Express server we’ll create a couple of routes that our front-end will eventually use to fetch data.
 7. asdf
 
 
