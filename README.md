@@ -6,7 +6,7 @@
 * **[Background](#Background)**
 * **[Links](#Links)**
 * **[Overview](#Overview)**
-    * [Step 1 Use CRA to create project](/docs/1.md) 
+    * [Step 1 Create the React Project](/docs/1.md) 
     * [Step 2 Setup Express Server](/docs/2.md)
     * [Step 3 Install MongoDB](/docs/3.md)
     * [Step 4 Connecting Express to MongoDB](/docs/4.md)
