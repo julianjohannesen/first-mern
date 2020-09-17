@@ -1,0 +1,36 @@
+[back to index](/README.md) | [prev](/docs/7.md) | [next](/docs/.9md)
+
+# Step 8 - Creating the User Model
+
+Now that Mongo is properly installed and running, the next thing we need to do is install Mongoose.
+
+```
+npm i mongoose
+```
+
+The next thing we need to do is create a schema for a new collection that we'll call "User".  Remember, a collection is similar to a table in a relational database. Strictly speaking, Mongo does not use schemas. However, Mongoose can create a sort of schema for us.
+
+Create a new file in the src directory and name it User.js. Copy and paste this code into the file:
+
+```js
+// User.js
+const mongoose = require('mongoose');
+
+// We'll use Mongoose's Schema class to instantiate a schema instance that we'll call UserSchema. The argument that we pass to Schema defines the fields that will appear in each document in the collection. Remember, a document is similar to a record.
+const UserSchema = new mongoose.Schema({
+    // The key is the name of the field we want and the value is an object defining the field's properties.
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true }
+});
+
+// Next we need to turn our schema into a model. We do that with Mongoose's model() method. The model method takes as parameters the name of the model and a schema. If you're wondering, the schema defined our collection and the model gives us the ability to perform CRUD operations on that collection. We're also exporting this module at the same time.
+module.exports = mongoose.model('User', UserSchema);
+```
+
+Now that the User model is defined, we can import it into server.js.
+
+```js
+// Add this to the import section of server.js
+const User = require("./User.js");
+```
+
