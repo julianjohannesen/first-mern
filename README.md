@@ -64,7 +64,6 @@ If you’d like to go deeper into any of the above topics, these articles are a 
 6. Returning to the back-end we’ll create a couple of routes that our front-end will eventually use to fetch data.
 7. asdf
 
-
 ## During Development
 
 While building this project, when you come back to this project after being away, remember to take the following steps:
@@ -74,7 +73,6 @@ While building this project, when you come back to this project after being away
 3. `Start the Express server (served on port 8080)`
 4. `Use curl (or Postman) to send a POST request to Express to make sure it's working`
 5. `Inspect Mongo with Mongo shell and query a record to make sure it's there`
-
 
 ## GLOSSARY
 
