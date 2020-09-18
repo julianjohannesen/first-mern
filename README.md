@@ -7,7 +7,7 @@ By [Julian Johannesen](https://github.com/julianjohannesen) and [Ben Davis](http
 * **[Background](#Background)**
 * **[Links](#Links)**
 * **[Overview](#Overview)**
-    * [Step 1 Use CRA to create project](/docs/1.md) 
+    * [Step 1 Create the React Project](/docs/1.md) 
     * [Step 2 Setup Express Server](/docs/2.md)
     * [Step 3 Install MongoDB](/docs/3.md)
     * [Step 4 Connecting Express to MongoDB](/docs/4.md)
@@ -19,9 +19,9 @@ By [Julian Johannesen](https://github.com/julianjohannesen) and [Ben Davis](http
 
 **Create a simple web app using the MERN stack and explore basic authentication.**
 
-In this tutorial we'll become familiar with how to build web applications that depend on APIs to provide them with services like user authentication and authorization. We’ll be building a very simple website that will allow a user to register an account, log in and log out securely. The stack we’ll be using is the popular MERN stack, which comprises MongoDB, Express.js, React.js, and Node.js. We’ll be using several other technologies along the way, but those four are the biggies.
+In this tutorialyou'llbecome familiar with how to build web applications that depend on APIs to provide them with services like user authentication and authorization. We’ll be building a very simple website that will allow a user to register an account, log in and log out securely. The stack we’ll be using is the popular MERN stack, which comprises MongoDB, Express.js, React.js, and Node.js. We’ll be using several other technologies along the way, but those four are the biggies.
 
-This tutorial is not intended to teach everything you need to know to deploy an application. Our intention is to cover the minimum requirements to build a working application.
+This tutorial is not intended to teach everything you need to know to deploy an application.theintention is to cover the minimum requirements to build a working application.
 
 ## Background
 
@@ -30,7 +30,7 @@ This is a tutorial for beginners, so don’t worry if you don’t have very much
 Some of the most import concepts to grasp are:
 - how clients and servers interact by exchanging HTTP messages
 - the role that React plays as a front-end library
-- the role that Node and Express play on the back-end to serve our API
+- the role that Node and Express play on the back-end to servetheAPI
 - the difference between client-side routing and traditional server-side routing
 
 ## Links
@@ -61,14 +61,13 @@ If you’d like to go deeper into any of the above topics, these articles are a 
 
 ## Overview
 
-1. We’ll begin by setting up our React project and ensuring that we’re able to use a development server to serve some React boilerplate to our browser.
-2. Next, we’ll set up a very simple Express server and ensure that we can use it to serve a simple page to our browser.
+1. We’ll begin by setting uptheReact project and ensuring that we’re able to use a development server to serve some React boilerplate tothebrowser.
+2. Next, we’ll set up a very simple Express server and ensure thatyoucan use it to serve a simple page tothebrowser.
 3. Then we’ll install MongoDB, and make sure that we’re able to start it, and interact with it via the Mongo shell.
-4. Using Express and MongoDB together is much easier with an ORM, so we’ll install Mongoose. After making some edits to our Express server script, we’ll ensure that our Express server can connect to MongoDB.
-5. At this point, we’ll jump back to the front-end and use React Router to set up some client-side routing. We’ll also create a couple of simple React components for our routes to render.
-6. Returning to the Express server we’ll create a couple of routes that our front-end will eventually use to fetch data.
+4. Using Express and MongoDB together is much easier with an ORM, so we’ll install Mongoose. After making some edits totheExpress server script, we’ll ensure thattheExpress server can connect to MongoDB.
+5. At this point, we’ll jump back to the front-end and use React Router to set up some client-side routing. We’ll also create a couple of simple React components fortheroutes to render.
+6. Returning to the Express server we’ll create a couple of routes thatthefront-end will eventually use to fetch data.
 7. asdf
-
 
 ## During Development
 
@@ -79,7 +78,6 @@ Unless you plan to complete the tutorial in one sitting, there are a few things 
 3. `Start the Express server (served on port 8080)`
 4. `Use curl (or Postman) to send a POST request to Express to make sure it's working`
 5. `Inspect the database with the mongo CLI and query a record to make sure everything is working as it should`
-
 
 ## GLOSSARY
 

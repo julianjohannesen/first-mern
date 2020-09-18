@@ -3,7 +3,7 @@
 const express = require('express');
 const path = require('path');
 
-// Instantiate our Express instance
+// InstantiatetheExpress instance
 const app = express();
 
 // Tell Express to use the json() method to parse the HTTP request body. (Please note, you don't need body-parser anymore. Express now includes that functionality natively.)
