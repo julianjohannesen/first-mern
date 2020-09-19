@@ -19,9 +19,9 @@ By [Julian Johannesen](https://github.com/julianjohannesen) and [Ben Davis](http
 
 **Create a simple web app using the MERN stack and explore basic authentication.**
 
-In this tutorialyou'llbecome familiar with how to build web applications that depend on APIs to provide them with services like user authentication and authorization. We’ll be building a very simple website that will allow a user to register an account, log in and log out securely. The stack we’ll be using is the popular MERN stack, which comprises MongoDB, Express.js, React.js, and Node.js. We’ll be using several other technologies along the way, but those four are the biggies.
+In this tutorial you'll become familiar with how to build web applications that depend on APIs to provide them with services like user authentication and authorization. You’ll be building a very simple website that will allow a user to register an account, log in and log out securely. The stack you’ll be using is the popular MERN stack, which comprises MongoDB, Express.js, React.js, and Node.js. You’ll be using several other technologies along the way, but those four are the biggies.
 
-This tutorial is not intended to teach everything you need to know to deploy an application.theintention is to cover the minimum requirements to build a working application.
+This tutorial is not intended to teach everything you need to know to deploy an application. Our intention is to cover only what you need to build a working application.
 
 ## Background
 
@@ -30,7 +30,7 @@ This is a tutorial for beginners, so don’t worry if you don’t have very much
 Some of the most import concepts to grasp are:
 - how clients and servers interact by exchanging HTTP messages
 - the role that React plays as a front-end library
-- the role that Node and Express play on the back-end to servetheAPI
+- the role that Node and Express play on the back-end to serve the API
 - the difference between client-side routing and traditional server-side routing
 
 ## Links
@@ -61,12 +61,12 @@ If you’d like to go deeper into any of the above topics, these articles are a 
 
 ## Overview
 
-1. We’ll begin by setting uptheReact project and ensuring that we’re able to use a development server to serve some React boilerplate tothebrowser.
-2. Next, we’ll set up a very simple Express server and ensure thatyoucan use it to serve a simple page tothebrowser.
-3. Then we’ll install MongoDB, and make sure that we’re able to start it, and interact with it via the Mongo shell.
-4. Using Express and MongoDB together is much easier with an ORM, so we’ll install Mongoose. After making some edits totheExpress server script, we’ll ensure thattheExpress server can connect to MongoDB.
-5. At this point, we’ll jump back to the front-end and use React Router to set up some client-side routing. We’ll also create a couple of simple React components fortheroutes to render.
-6. Returning to the Express server we’ll create a couple of routes thatthefront-end will eventually use to fetch data.
+1. You’ll begin by setting up the React project and ensuring that you’re able to use a development server to serve some React boilerplate to the browser.
+2. Next, you’ll set up a very simple Express server and ensure that you can use it to serve a simple page to the browser.
+3. Then you’ll install MongoDB, and make sure that you're able to start it, and interact with it via the Mongo shell.
+4. Using Express and MongoDB together is much easier with an ORM, so you’ll install Mongoose. After making some edits to the Express server script, you’ll ensure that the Express server can connect to MongoDB.
+5. At this point, you’ll jump back to the front-end and use React Router to set up some client-side routing. You’ll also create a couple of simple React components for the routes to render.
+6. Returning to the Express server you’ll create a couple of routes that the front-end will eventually use to fetch data.
 7. asdf
 
 ## During Development
