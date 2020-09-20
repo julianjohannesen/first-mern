@@ -4,7 +4,9 @@
 
 # Step 5 - Adding Routes to React
 
-The next thing you need to do is to add a couple of routes to the React front-end. Specifically, routes to a home page and log in page. Don’t worry if you don’t know much about client-side routing. We’re not going to dwell on it.
+The next thing you need to do is to add a couple of routes to the React front-end. Specifically, routes to a home page and log in page. 
+
+Don’t worry if you don’t know much about client-side routing. All you need to know right now is that in a React application typing a URL in the address bar or navigating to a page does not always require that the browser send an HTTP GET request to a server and then await a response from the server that contains the new page. Instead, React applications request a great deal of site content up front, and then emulate server-side routing using the browser's History API. From a user's perspective, client-side routing is indistinguishable from server-side routing, except for the fact that client-side routing is often much, much faster.
 
 First, you'll install React Router, a popular routing library for React.
 

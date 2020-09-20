@@ -6,9 +6,9 @@
 
 So far, you’ve created a boilerplate React project and confirmed that it can successfully serve the home page on port 3000. You’ve also installed the Express library and created a very simple server script to confirm that Express is serving a welcome message on port 8080.
 
-Here’s a quick overview of what you need to do next. First, you need to install a database that you’ll use to store the users’ account information, i.e. their email address and password. When a user submits the registration form or the login form (neither of which we've created yet) from their browser, the browser will send an HTTP POST request totheExpress server. Express uses another piece of software called an ORM to talk tothedatabase. If the user is creating a new account,theORM will tellthedatabase to save that new information to a new record. If the user is just logging in,theORM will query the database to make sure that a record with a matching email and password combination exists.
+Here’s a quick overview of what you need to do next. First, you need to install a database that you’ll use to store the users’ account information, i.e. their email address and password. When a user submits the registration form or the login form (neither of which we've created yet) from their browser, the browser will send an HTTP POST request to the Express server. Express uses another piece of software called an ORM to talk to the database. If the user is creating a new account, the ORM will tell the database to save that new information to a new document (aka record). If the user is just logging in, the ORM will query the database to make sure that a document with a matching email and password combination exists.
 
-The database we’re using MongoDB. The ORM thatyou'lluse to talk to MongoDB is called Mongoose.
+The database you’re using is MongoDB. The ORM is Mongoose.
 
 ## Is MongoDB Installed?
 
