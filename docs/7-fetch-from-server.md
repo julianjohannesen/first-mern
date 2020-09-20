@@ -8,6 +8,72 @@ The Log In component you wrote in step 3 renders a line of text on the page when
 
 In this step, you'll re-write the Log In component to render the log in form. In the next step, you'll write the submit handler that will send the form data to the API.
 
+Create a new file and name it LogIn.js. Paste in the code below.
+
+```js
+// LogIn.js
+
+import React, {useState} from 'react';
+
+function LogIn(props) {
+
+        // Use the useState hook to create a state object with email and password properties.
+        const [state , setState] = useState( {email : "", password : ""} );
+        
+        // Track any change to an input element's value in state
+        const handleChange = (e) => {
+            // Deconstruct the id and value properties from the event object's target object
+            const {id , value} = e.target; 
+            // setState can take a callback. The callback updates the state object to the changed input's id (either email or password) and its new value (whatever just occurred to change the input's value).
+            setState( prevState => ( {...prevState, [id] : value} ) );
+        }
+
+        // Handle form submission
+        const handleSubmit = (e) => {
+            e.preventDefault();
+            // Call sendFormDetailsToAPI
+            sendFormDetailsToAPI();
+        }
+
+        const sendFormDetailsToAPI = () => {
+            // You'll do this in the next step
+        }
+
+    return(
+        <form onSubmit={handleSubmit}>
+            <label htmlFor="email">Email address</label>
+            <input 
+                type="email" 
+                id="email" 
+                placeholder="Enter email" 
+                {/* Determine the input's value using state */}
+                value={state.email} 
+                {/* Track any change to the input's value in state  */}
+                onChange={handleChange}
+            />
+               
+            <label htmlFor="exampleInputPassword1">Password</label>
+            <input 
+                type="password" 
+                id="password" 
+                placeholder="Password" 
+                value={state.email} 
+                onChange={handleChange}
+            />
+  
+            <button type="submit" >Log In</button>
+        </form>
+    )
+}
+```
+
+
+
+
+
+
+
+
 
  
 Next we're going to install a ORM called Mongoose. Mongoose will help us talk to the Mongo database. Using Mongoose you can quickly accomplish what would otherwise be much more verbose, tedious, and repetitive tasks.
