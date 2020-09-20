@@ -2,7 +2,7 @@
 
 [back to index](/README.md) | [prev](/docs/4.md) | [next](/docs/6.md)
 
-# Step 5 - Adding routes to React
+# Step 5 - Adding Routes to React
 
 The next thing you need to do is to add a couple of routes to the React front-end. Specifically, routes to a home page and log in page. Don’t worry if you don’t know much about client-side routing. We’re not going to dwell on it.
 
