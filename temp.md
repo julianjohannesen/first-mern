@@ -16,9 +16,9 @@ app.use(express.static(path.join(__dirname, public)));
 
 // ROUTES
 
-// GET the homepage
+// GET the home page
 app.get('/', function (req, res) {
-   res.send('Welcome to the homepage!');
+   res.send('Welcome to the home page!');
 });
 
 // Tell Express which port to listen to
