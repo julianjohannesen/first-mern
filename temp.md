@@ -3,7 +3,7 @@
 const express = require('express');
 const path = require('path');
 
-// Instantiate our Express instance
+// InstantiatetheExpress instance
 const app = express();
 
 // Tell Express to use the json() method to parse the HTTP request body. (Please note, you don't need body-parser anymore. Express now includes that functionality natively.)
@@ -16,9 +16,9 @@ app.use(express.static(path.join(__dirname, public)));
 
 // ROUTES
 
-// GET the homepage
+// GET the home page
 app.get('/', function (req, res) {
-   res.send('Welcome to the homepage!');
+   res.send('Welcome to the home page!');
 });
 
 // Tell Express which port to listen to
