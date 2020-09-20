@@ -8,12 +8,12 @@ By [Julian Johannesen](https://github.com/julianjohannesen) and [Ben Davis](http
 * **[Links](#Links)**
 * **[Overview](#Overview)**
     * [Step 1 Create the React Project](/docs/1.md) 
-    * [Step 2 Setup Express Server](/docs/2.md)
+    * [Step 2 Set Up Express Server](/docs/2.md)
     * [Step 3 Install MongoDB](/docs/3.md)
-    * [Step 4 Connecting Express to MongoDB](/docs/4.md)
-    * [Step 5 Adding Routes in React](/docs/5.md)
-    * [Step 6 Adding Routes in Express](/docs/6.md)
-    * [Step 7 Requesting Data](/docs/7.md)
+    * [Step 4 Connect to MongoDB](/docs/4.md)
+    * [Step 5 Add Routes in React](/docs/5.md)
+    * [Step 6 Add Routes in Express](/docs/6.md)
+    * [Step 7 Request Data](/docs/7.md)
 
 ## Goal
 

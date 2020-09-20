@@ -2,11 +2,11 @@
 
 [back to index](/README.md) | [prev](/docs/4.md) | [next](/docs/6.md)
 
-# Step 5 - Adding Routes to React
+# Step 5 - React Routing Part 1 - Adding Routes
 
 The next thing you need to do is to add a couple of routes to the React front-end. Specifically, routes to a home page and log in page. 
 
-Don’t worry if you don’t know much about client-side routing. All you need to know right now is that in a React application typing a URL in the address bar or navigating to a page does not always require that the browser send an HTTP GET request to a server and then await a response from the server that contains the new page. Instead, React applications request a great deal of site content up front, and then emulate server-side routing using the browser's History API. From a user's perspective, client-side routing is indistinguishable from server-side routing, except for the fact that client-side routing is often much, much faster.
+Don’t worry if you don’t know much about client-side routing. All you need to know right now is that in a React application typing a URL in the address bar or navigating to a page does not always require that the browser send an HTTP request to a server and then wait for a response from the server containing the requested content. Instead, React applications request a great deal of site content up front, and then emulate server-side routing using the browser's History API. From a user's perspective, client-side routing is indistinguishable from server-side routing, except for the fact that client-side routing is often much, much faster.
 
 First, you'll install React Router, a popular routing library for React.
 
@@ -34,11 +34,11 @@ function App() {
             <Link to="/login">Log In</Link>
 			{/* The Switch component will only render the first Route that matches the path the user wants to navigate to. Without it, clicking on the Home link above would render both the Home component and the LogIn component on the same page. */}
             <Switch>
-				{/* When a user attempts to navigate to a particular route, Route will determine which component to render. Route takes a path attribute whose value is the route in question. Route can also take a component attribute to indicate what component to render. However, in this case the component is Route's child node. */}
+				{/* When a user attempts to navigate to a particular route, Route will determine which React component to render. Route takes a path attribute whose value is the route in question. Route can also take a component attribute to indicate what component to render. In this particular case, the component is Route's child node. */}
                 <Route exact path="/">
                     <Home />
                 </Route>
-                <Route exact path="/login">
+                <Route exact path="/log-in">
                     <LogIn />
                 </Route>
             </Switch>

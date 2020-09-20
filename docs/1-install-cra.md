@@ -2,7 +2,7 @@
 
 # Step One - Create the React Project
 
-You're going to use Create React App to bootstrap your React application. To do this, you’ll need to make sure you have a relatively recent version of Node.js installed on your machine. The most recent version as of this writing is 14.x.
+You're going to use Create React App to bootstrap your React application. To do this, you’ll need a relatively recent version of Node.js. The most recent version as of this writing is 14.x.
 
 Node will automatically install NPM - the Node Package Manager. You can then use NPM to install all of the other libraries talked about below.
 
@@ -36,7 +36,7 @@ Next, from the command line, run:
  npm start
 ```
 
-This will start a development server that will serve your React installation. It will be served to port 3000 by default. Open your browser and in the address bar, type in localhost:3000. The site should load and show a spinning icon.
+This will start a development server that will serve your React application. Open your browser and in the address bar, type in localhost:3000. The site should load and show a spinning icon.
 
 NOTE: The NPM start script can be found in package.json. You can create other scripts in the same place. Other scripts will require a slightly different syntax to start. Use `npm run myScript`.
 

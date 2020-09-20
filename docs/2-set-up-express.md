@@ -17,19 +17,19 @@ Open server.js and paste in the following pared-down Express server script:
 ```js
 // server.js
 
-// Use Node's require method to import the Express package
+// Use Node's require method to import the Express library
 const express = require("express");
 
 // Instantiate an instance of Express
 const app = express();
 
-// Create a route that handles HTTP GET requests for the home page. The first parameter is the route. The second is the route handler. Pass the route handler the HTTP request and response objects and use Express's send() method to send a line of text back to the browser.
+// Create a route that handles HTTP GET requests for the site's root URL. The first parameter is the route. The second is the route handler. Pass the route handler the HTTP request and response objects and use Express's send() method to send a line of text back to the browser. Different methods can be sued to send  different types of data back to the browser, for example, an HTML document or JSON.
 app.get("/", function (req, res) {
-	res.send("Welcome to the home page.");
+	res.send("Welcome to the API home page.");
 });
 
 // Tell Express to listen to port 8080
-app.listen(process.env.PORT || 8080);
+app.listen(8080);
 ```
 
 Next, open package.json and at the top level, the same level as “name” and “version,” insert the line:
@@ -52,7 +52,7 @@ Now open package.json again and insert a new script in the scripts object:
 "server": "nodemon server.js --inspect --unhandled-rejections=strict"
 ```
 
-Note that installing Nodemon was necessary to avoid stopping and restarting the Express server every time you make a change. This extra step was not necessary for the React server. This feature is built into Create React App applications by default.
+Note that installing Nodemon was necessary to avoid stopping and restarting the Express server every time you make a change. This extra step was not necessary for the React development server. This feature is built into Create React App applications by default.
 
 You can now start the Express server with:
 
