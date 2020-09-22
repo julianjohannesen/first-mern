@@ -24,3 +24,10 @@ app.get('/', function (req, res) {
 // Tell Express which port to listen to
 app.listen(process.env.PORT || 8080);
 ```
+
+
+const mongo_uri = 'mongodb://localhost/first-mern';
+mongoose.connect(mongo_uri, {useNewUrlParser: true, useUnifiedTopology: true}, function (err) {
+   if (err) {throw err} 
+   else {console.log(`Connected to ${mongo_uri}`)}
+});

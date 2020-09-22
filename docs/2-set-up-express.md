@@ -2,13 +2,13 @@
 
 # Step 2 - Set up the Express Server
 
-Now run:
+The next step is to install Express, a minimal web framework built on top of Node.js. Express plays much the same role in the JavaScript ecosystem that Django does in Python, Rails does in Ruby, or Laravel does in PHP. 
 
 ```
  npm i express
 ```
 
-This will install the Express library. You’ll see some more information printed to your screen.
+You’ll see some more information printed to your screen.
 
 Next, create a new file at the top level and name it server.js. This file should appear at the same level as package.json and README.md.
 
@@ -23,7 +23,7 @@ const express = require("express");
 // Instantiate an instance of Express
 const app = express();
 
-// Create a route that handles HTTP GET requests for the site's root URL. The first parameter is the route. The second is the route handler. Pass the route handler the HTTP request and response objects and use Express's send() method to send a line of text back to the browser. Different methods can be sued to send  different types of data back to the browser, for example, an HTML document or JSON.
+// Create a route that handles HTTP GET requests for the site's root URL. app.get()'s first parameter is the route. The second is the route handler. Pass the route handler the HTTP request and response objects and use Express's send() method to send a line of text back to the browser. Different methods can be used to send  different types of data, for example, an HTML document or JSON.
 app.get("/", function (req, res) {
 	res.send("Welcome to the API home page.");
 });

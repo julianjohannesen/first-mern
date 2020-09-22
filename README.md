@@ -86,3 +86,8 @@ Unless you plan to complete the tutorial in one sitting, there are a few things 
 **JWT** stands for JSON Web Token. JWTs are a way of transmitting authentication and authorization information from and to a server without the server needing to store a session ID.
 
 **ORM** which stands Object Relation Management is a way of bridging the gap between object oriented programming languages and (usually) relational databases.
+
+
+NOTES -
+
+- Talk about the difference between a site and service. The React app is a site that's served from a server, but requires no interaction with the server that's hosting it. The Express server is not a "site", although Express can certainly serve HTML pages. In this tutorial, the Express server is serving an API. The API is a service. Client apps can send data to the API and request data from the API.
